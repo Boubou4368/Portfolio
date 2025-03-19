@@ -216,9 +216,12 @@ nav ul li a:hover {
     margin : 2dvh;
 }
 .ppp {
-    overflow: hidden; /* Cache le contenu débordant */
-    transition: max-height 0.5s ease; 
+    width: 150dvh;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+    transition: height 0.3s ease;
 }
-button{
-    
+.hidden-text {
+    display: none;
 }
