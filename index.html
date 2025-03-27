@@ -8,11 +8,67 @@
         <link id="theme-link" href="style/style.css" rel="stylesheet">
     </head>
 <body>
+    <div class="fixed-background"></div>
     <header>
-        <h1><u>Profile : </u></h1>
-        <descript>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu vulputate ligula, at euismod lacus. Nullam quam ex, tincidunt id nisi eget, ullamcorper sagittis nulla. Morbi pretium nisl magna, pulvinar dignissim odio commodo auctor. Suspendisse sagittis eu massa id maximus. Aenean at aliquet tortor. Aliquam a neque sed nulla consectetur interdum. Nunc tempus augue sit amet pharetra ultricies.</descript>
-        <hr>
+        <nav>
+            <ul>
+                <li><a> Accueil</a></li>
+                <li><a> Projets</a></li>
+                <li><a> bilan de compétence</a></li>
+                <li><a> Contact</a></li>
+            </ul>
+        </nav>
     </header>
-</body>
+    <section class = "welcome">
+        <div class = "shape" id ="shapeG">
+            <div class = "Gras" id ="Bonjour">Bonjour</div>
+            <div id = "intro-text"> Je suis <u>Evan Atherly</u>,<br>Etudiant en Informatique</div>
+        </div>
+        <div class = "shape" id ="shapeDTitre">
+            <div class = "Gras" id = "Presentation"> Présentation</div>
+        </div>    
+        <div class = "shape" id ="shapeDTexte">
+            <div class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum accumsan fringilla. Nunc posuere placerat libero laoreet hendrerit. Integer vitae vestibulum lectus, et interdum elit. Donec tempus, leo sit amet lobortis cursus, odio orci molestie ligula</div>
+        </div>
+    </section>
 
+    <section class="projectMB">
+        <div class="shape Maze-bankTXT text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum accumsan fringilla.
+            Nunc posuere placerat libero laoreet hendrerit. Integer vitae vestibulum lectus, et interdum elit.
+            Donec tempus, leo sit amet lobortis cursus, odio orci molestie ligula.
+        </div>
+        <div class="shape Maze-bankIMG">
+            <img class="IMGmaze" src="images/Maze-bank.png" alt="photo du jeux">
+        </div>
+    </section>
+    <section class = "projectWS">
+        <div class = "shape webserverIMG">
+            <img class = "IMGserver" src="images/server.svg" alt="photo illustratrice d'un serveur web">
+        </div>
+        <div class= "shape webserverTXT text">                
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum accumsan fringilla.
+            Nunc posuere placerat libero laoreet hendrerit. Integer vitae vestibulum lectus, et interdum elit.
+            Donec tempus, leo sit amet lobortis cursus, odio orci molestie ligula.
+        </div>
+    </section>
+    <section class = "bilan_competence">
+        <div class = "Gras TXTcompetence"><u>Bilan de compétence</u></div>
+        <div class = "shape ppp" id = "ppp"> 
+            <div class="card" data-nr="1">
+                <p class ="collapse">Evan Atherly, je suis un étudiant en BUT informatique et intéressé par ce domaine. 
+                    j'ai fais le choix de cette formation assez vite, non pas parce que 
+                    j'étais sur de moi mais plutôt parce que je considère qu'il faut savoir prendre 
+                    des décisions. j'ai donc choisis un domaine qui m’intéresse sans pour autant en 
+                    être passionné, à l'heure ou j'écris cela je vois de plus en plus une passion se développer.
+                    Ainsi je dirais que je suis quelqu'un de décisionnaire. Pour ma deuxième qualité,
+                    je dirais que je suis assez tenace. Etant donnée que l'informatique ne me passionnais 
+                    pas a premiere abord j'avais du retard sur certaines personnes de ma promotion. 
+                    J'ai donc travaillé de plus en plus afin de m'améliorer. Enfin ma troisième qualité serai ma sociabilité. 
+                    J'ai toujours eu une facilité à aller vers les gens. Cela m'a été utile lors de travaux de groupe notamment</p>
+                <button onclick="readMore('1')" class="myBtn">Read more</button>
+                <script src = "js/viewmore.js"></script>
+            </div>
+    </section>
+</body>
 </html>

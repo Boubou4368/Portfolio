@@ -1,0 +1,47 @@
+function readMore(nr) {
+    let p = document.querySelector(`.card[data-nr="${nr}"] p`);
+    let btnText = document.querySelector(`.card[data-nr="${nr}"] .myBtn`);
+  
+  
+    if (!p.classList.contains('collapse')) {
+      p.classList.add('collapse');
+      btnText.innerHTML = "Read more";
+    } else {
+      p.classList.remove('collapse');
+      btnText.innerHTML = "Read more";
+    }
+  }
+  .myBtn {
+    background-color: transparent!important;
+    color: #000000;
+    border: none;
+    font-family: Arial;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  p {
+    overflow: hidden;
+    transition: max-height 0.7s;
+    max-height: 100px;
+  }
+  
+  p.collapse {
+    max-height: 30px;
+  }
+  <html>
+  
+  <body>
+  
+    <div class="card" style="margin-top: 50px;" data-nr="1">
+  
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  
+      <button onclick="readMore('1')" class="myBtn">Read more</button>
+  
+    </div>
+  
+  </html>
+  </body>
