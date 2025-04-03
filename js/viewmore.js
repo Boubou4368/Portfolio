@@ -5,9 +5,9 @@ function readMore(nr) {
   
     if (!p.classList.contains('collapse')) {
       p.classList.add('collapse');
-      btnText.innerHTML = "Read more";
+      btnText.innerHTML = "Voir plus";
     } else {
       p.classList.remove('collapse');
-      btnText.innerHTML = "Read more";
+      btnText.innerHTML = "Voir moins";
     }
   }
