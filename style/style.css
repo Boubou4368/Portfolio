@@ -28,7 +28,7 @@ html, body {
 header {
     position: fixed;
     z-index: 20;
-    background-color:#6d2d39;
+    background-color:#701425df;
     border-bottom: #687070;
     color : white;
     text-align: center;
@@ -262,13 +262,16 @@ nav ul li a:hover {
     margin-top: 1%;
   }
   
-p {
+.viewmore {
+    margin-top: 3dvh;
     overflow: hidden;
     transition: max-height 0.7s;
-    max-height: 100px;
+    max-height: 200px;
     text-align: justify;
+    font-size: 25px;
+
 }
   
-p.collapse {
+.viewmore.collapse {
     max-height: 30px;
 }
