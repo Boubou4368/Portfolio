@@ -261,14 +261,18 @@ nav ul li a:hover {
     text-align: center;
     margin-top: 1%;
   }
+
+.appercu {
+    font-weight: 700;
+}
   
 .viewmore {
     margin-top: 3dvh;
     overflow: hidden;
-    transition: max-height 0.7s;
+    transition: max-height 1s;
     max-height: 200px;
     text-align: justify;
-    font-size: 25px;
+    font-size: 20px;
 
 }
   
