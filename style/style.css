@@ -13,6 +13,7 @@ html, body {
     display: flex;
     flex-direction : column;
     width : 100%;
+    scroll-behavior: smooth;
 }
 
 .fixed-background {
@@ -73,14 +74,17 @@ nav ul li a:hover {
     overflow: auto;
     grid-template-rows: 1fr 1fr 1fr;
 }
-/* --- contenu premiere page --- */
-.welcome {
-    position : absolute;
+
+.§ {
     display: grid;
+    height: calc(100dvh - 9dvh);
+}
+
+/* --- contenu premiere page --- */
+#welcome {
+    position : absolute;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 100%; /* Ajusté pour tenir compte de la hauteur de l'en-tête */
-    width: 100%;
 }
 .shape {
     background-color: #5b5d66c7;
@@ -143,6 +147,49 @@ nav ul li a:hover {
 }
 
 /* --- ProjetMB --- */
+
+#project{
+    background-color:#5b5d66c7;
+    height: 50dvh;
+}
+.horizontal {
+    width: 100%;
+    overflow-x: auto; /* Permet le défilement horizontal */
+}
+.horizontal-section {
+    display: flex;
+    width: max-content; /* Permet aux éléments de s'aligner horizontalement */
+}
+
+.idcard {
+    width : 100dvh;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+.projectTXT{
+    flex-direction: column;
+    grid-column: 1;
+    font-size : 20px;
+    height: 80%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+.lien {
+    display: block; /* Affiche le lien comme un bloc */
+    text-align: start; /* Centre le lien */
+    margin-top: 10px; /* Ajoute un espacement au-dessus du lien */
+    color: blue;
+    text-decoration: none;
+}
+.lien:hover {
+    text-decoration: underline;
+}
+#imgMB {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
 .projectMB {
     display: grid;
     grid-template-columns: 1.7fr 1.3fr;
@@ -166,14 +213,7 @@ nav ul li a:hover {
     display: inline;
 }
 
-.Maze-bankTXT{
-    height: 80%;
-    justify-self: center;
-    align-self: center ;
-    width: 95%;
-    display: flex;
-    align-items: center;
-}
+
 .Maze-bankIMG{
     grid-column-start: 2;
     justify-self: center;
@@ -222,10 +262,9 @@ nav ul li a:hover {
 }
 
 /* --- Bilan de compétence --- */
-.bilan_competence {
+#bilan_competence {
     background-color: #5b5d66c7;
     height: calc(100dvh - 9dvh);
-    display : grid;
     grid-template-rows:repeat(3,1fr);
 }
 
@@ -273,7 +312,6 @@ nav ul li a:hover {
     max-height: 200px;
     text-align: justify;
     font-size: 20px;
-
 }
   
 .viewmore.collapse {

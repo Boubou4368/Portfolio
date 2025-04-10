@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.vertical-section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.horizontal-section-container {
+    width: 100%;
+    overflow-x: auto; /* Permet le défilement horizontal */
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.horizontal-section {
+    display: flex;
+    width: max-content; /* Permet aux éléments de s'aligner horizontalement */
+}
+
+.item {
+    min-width: 200px; /* Largeur minimale pour chaque élément */
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    box-sizing: border-box;
+}

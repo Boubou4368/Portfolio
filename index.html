@@ -12,14 +12,14 @@
     <header>
         <nav>
             <ul>
-                <li><a> Accueil</a></li>
-                <li><a> Projets</a></li>
-                <li><a> bilan de compétence</a></li>
+                <li><a href="#welcome"> Accueil</a></li>
+                <li><a href="#project"> Projets</a></li>
+                <li><a href="#bilan_competence"> bilan de compétence</a></li>
                 <li><a> Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class = "welcome">
+    <section class ="§" id = "welcome">
         <div class = "shape" id ="shapeG">
             <div class = "Gras" id ="Bonjour">Bonjour</div>
             <div id = "intro-text"> Je suis <u>Evan Atherly</u></div>
@@ -34,30 +34,43 @@
         </div>
     </section>
 
-    <section class="projectMB">
-        <div class="shape Maze-bankTXT text">
-            <p>Durant ma première année d'étude, j'ai eu pour SAE la mission de réaliser un jeu vidéo en C++ inspiré du célèbre jeu Pacman.<br>
-            Ici, on incarne un voleur <span class="red text">V</span> et nous devons récupérer le trésor <span class="yellow text">O</span> puis nous enfuir par une porte qui s'ouvre une fois le trésor récupéré,
-            le tout en échappant aux policiers <span class="blue text">P</span>.<br>
-            Ce jeu se joue sur le terminal Linux, on contrôle les mouvements du voleur tandis que les policiers se déplacent en fonction de notre position, 
-            leur but étant bien évidemment de nous attraper.</p>
+    <section class ="§ horizontal" id ="project">
+        <div class = "horizontal-section">
+            <div class="idcard shape horizontal-section">
+                <div class="projectTXT">
+                    <p>Durant ma première année d'étude, j'ai eu pour SAE la mission de réaliser un jeu vidéo en C++ inspiré du célèbre jeu Pacman.<br>
+                    Ici, on incarne un voleur <span class="red text">V</span> et nous devons récupérer le trésor <span class="yellow text">O</span> puis nous enfuir par une porte qui s'ouvre une fois le trésor récupéré,
+                    le tout en échappant aux policiers <span class="blue text">P</span>.<br>
+                    Ce jeu se joue sur le terminal Linux, on contrôle les mouvements du voleur tandis que les policiers se déplacent en fonction de notre position, 
+                    leur but étant bien évidemment de nous attraper.</p>
+                    <a class ="lien" href="https://github.com/Boubou4368/Portfolio"><i>Lien vers le github du projet</i></a>
+                </div>
+                <img id="imgMB"src="images/Maze-bank.png"></img>
+            </div>
+            <div class="idcard shape horizontal-section">
+                <div class="projectTXT">
+                    <p>En complément de ce que je voyais durant mes cours, 
+                    j'ai voulu m'engager dans un projet personnel. Pour mon oral de bac, 
+                    j'avais entrepris le projet de creer mon propre NAS, ce que j'ai reussi à faire, 
+                    cependant avoir quelque choses a soit sur le web me sembler plus interresant
+                    j'ai donc recupéré ce NAS que j'ai transformé en serveur web sur lequel j'heberge ce site.<br>
+                    Grâce à ça maintenant je suis capable de gerer la presence d'un machine dans un réseau notament avec l'adressage IP par exemple.
+                    J'ai aussi par conséquent dévelloper ce portfolio dinamyque.
+                    </p>
+                </div>
+                <img id="imgMB"src="images/server.svg"></img>
+            </div>
+            <div id="MazeB" class="idcard shape horizontal-section">
+                <div class="projectTXT">
+                    <p>Projet en  Java  à suivre ....</p>
+                </div>
+                <img id="imgMB"src="images/java.svg"></img>
+            </div>
         </div>
-        <div class="shape Maze-bankIMG">
-            <img class="IMGmaze" src="images/Maze-bank.png" alt="photo du jeux">
-        </div>
-    </section>
-    <section class = "projectWS">
-        <div class = "shape webserverIMG">
-            <img class = "IMGserver" src="images/server.svg" alt="photo illustratrice d'un serveur web">
-        </div>
-        <div class= "shape webserverTXT text">                
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum accumsan fringilla.
-            Nunc posuere placerat libero laoreet hendrerit. Integer vitae vestibulum lectus, et interdum elit.
-            Donec tempus, leo sit amet lobortis cursus, odio orci molestie ligula.
-        </div>
+
     </section>
 
-    <section class = "bilan_competence">
+    <section class ="§" id = "bilan_competence">
         <div class = "Gras Bilan"><u>Bilan de compétence</u></div>
         <section class = "case" id="first">
             <div class="card" data-nr="1">
