@@ -6,6 +6,7 @@
         <title>Portfolio - Evan Atherly</title>
         <link href="style/nomalize.css">
         <link id="theme-link" href="style/style.css" rel="stylesheet">
+        <link rel="icon" type="image/vnd.icon" href="images/iconblanche.png">
     </head>
 <body>
     <div class="fixed-background"></div>
@@ -15,7 +16,7 @@
                 <li><a href="#welcome"> Accueil</a></li>
                 <li><a href="#project"> Projets</a></li>
                 <li><a href="#bilan_competence"> bilan de compétence</a></li>
-                <li><a> Contact</a></li>
+                <li><a href="#contact"> Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -57,6 +58,7 @@
                     Grâce à ça maintenant je suis capable de gerer la presence d'un machine dans un réseau notament avec l'adressage IP par exemple.
                     J'ai aussi par conséquent dévelloper ce portfolio dinamyque.
                     </p>
+                    <a class ="lien" href="https://github.com/Boubou4368/Projet-Maze-Bank-#"><i>Lien vers le github du projet</i></a>
                 </div>
                 <img id="imgMB"src="images/server.svg"></img>
             </div>
@@ -102,6 +104,24 @@
                     J'ai donc travaillé de plus en plus afin de m'améliorer.</p>
                 <button onclick="readMore('3')" class="myBtn">Voir plus</button>
                 <script src = "js/viewmore.js"></script>
+        </section>
+    </section>
+
+    <section id ="contact" class="§">
+        <embed class ="cv" src="document/Cv .pdf" frameborder="0"></embed>
+        <section class ="shape" id="mail">
+            <form action="php/envoyer_email.php" method="post">
+                <label for="nom">Nom :</label>
+                <input class="input" type="text" id="nom" name="nom" required><br><br>
+    
+                <label for="email">Email :</label>
+                <input class="input" type="email" id="email" name="email" required><br><br>
+    
+                <label for="message">Message :</label><br>
+                <textarea  class="input"id="message" name="message" rows="4" required></textarea><br><br>
+    
+                <input class="input" id="send" type="submit" value="Envoyer">
+            </form>
         </section>
     </section>
 </body>
