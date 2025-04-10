@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Défilement Horizontal</title>
-    <link rel="stylesheet" href="test.css">
+    <title>Copier l'email avec SVG</title>
+    <style>
+        .copy-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .copy-button svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .copy-button:hover svg {
+            fill: blue;
+        }
+    </style>
 </head>
 <body>
-    <div class="vertical-section">
-        <h1>Section Verticale</h1>
-        <p>Ceci est une section qui défile verticalement.</p>
-    </div>
+    <p>
+        Mon email : <span id="email">exemple@example.com</span>
+        <button class="copy-button" onclick="copierEmail()" aria-label="Copier l'email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                
+            </svg>
+        </button>
+    </p>
 
-    <div class="horizontal-section-container">
-        <div class="horizontal-section">
-            <div class="item">Item 1</div>
-            <div class="item">Item 2</div>
-            <div class="item">Item 3</div>
-            <div class="item">Item 4</div>
-        </div>
-    </div>
-
-    <div class="vertical-section">
-        <h1>Autre Section Verticale</h1>
-        <p>Une autre section qui défile verticalement.</p>
-    </div>
+    <script>
+        function copierEmail() {
+            var email = document.getElementById('email').innerText;
+            var textarea = document.createElement('textarea');
+            textarea.value = email;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('Email copié : ' + email);
+        }
+    </script>
 </body>
 </html>

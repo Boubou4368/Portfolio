@@ -337,10 +337,7 @@ nav ul li a:hover {
     padding-left : 5%;
 }
 
-#mail{
-    align-self: center;
-    justify-self:center ;
-}
+
 .input{
     border-radius: 10px;
     border: none;
@@ -350,3 +347,38 @@ nav ul li a:hover {
     width: 100%;
 }
 
+#coordonnées {
+    justify-self:center;
+    align-self:center ;
+    height: 30dvh;
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+#mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.copy-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copy-button img {
+    display: flex;
+    
+    width: 24px;
+    height: 24px;
+}
+
+.copy-button:hover img {
+    filter: brightness(0.8);
+}
+#photo {
+    border: none;
+}

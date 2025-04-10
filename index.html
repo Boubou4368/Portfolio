@@ -109,19 +109,13 @@
 
     <section id ="contact" class="§">
         <embed class ="cv" src="document/Cv .pdf" frameborder="0"></embed>
-        <section class ="shape" id="mail">
-            <form action="php/envoyer_email.php" method="post">
-                <label for="nom">Nom :</label>
-                <input class="input" type="text" id="nom" name="nom" required><br><br>
-    
-                <label for="email">Email :</label>
-                <input class="input" type="email" id="email" name="email" required><br><br>
-    
-                <label for="message">Message :</label><br>
-                <textarea  class="input"id="message" name="message" rows="4" required></textarea><br><br>
-    
-                <input class="input" id="send" type="submit" value="Envoyer">
-            </form>
+        <section class ="shape" id="coordonnées">
+            <section class ="case" id ="email"><span><i>atherlyevan@gmail.com</i></span><button class="copy-button" onclick="copierEmail()" aria-label="Copier l'email">
+                <img src="images/copy-icon.svg" alt="copier"></img></button><script src = "js/copier.js"></script>
+            </section>
+            <section class ="case" id ="modile"><i>0615775018</i><button class="copy-button" onclick="copierEmail()" aria-label="Copier l'email">
+                <img src="images/copy-icon.svg" alt="copier"></img></button><script src = "js/copier.js"></script></section>
+            <section class ="case" id ="photo"><p></p></section>
         </section>
     </section>
 </body>
