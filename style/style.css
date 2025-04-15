@@ -40,6 +40,18 @@ header {
     align-items: center;
     box-shadow: 3px 1px 15px 5px rgb(171, 177, 181);
 }
+
+.logo img {
+    height: 60px; /* Taille du logo */
+    margin-left: 10px; /* Réduit l'espace entre le logo et la navigation */
+    margin-top:10px;
+    border-radius:20px;
+    position: fixed;
+    z-index: 25;
+    top:0;
+    left:0;
+}
+
 nav {
     width: 70%;
 }
@@ -115,7 +127,7 @@ nav ul li a:hover {
 }
 
 #intro-text {
-    margin-top: 10px;
+    margin-top: 1dvh;
     line-height: 1.5;
     text-align: right;
     justify-self: end;
@@ -135,7 +147,7 @@ nav ul li a:hover {
 #shapeDTexte {
     grid-column-start: 2;
     grid-row-start: 2;
-    margin-top: 10px;
+    margin-top: 1dvh;
     line-height: 1.5;
     justify-self: start;
     align-self: flex-start;
@@ -177,11 +189,8 @@ nav ul li a:hover {
     justify-content: center;
 }
 .lien {
-    display: block; /* Affiche le lien comme un bloc */
     text-align: start; /* Centre le lien */
-    margin-top: 10px; /* Ajoute un espacement au-dessus du lien */
     color: blue;
-    text-decoration: none;
 }
 .lien:hover {
     text-decoration: underline;
@@ -231,13 +240,6 @@ nav ul li a:hover {
 
 /* ---projectWS --- */
 
-.projectWS {
-    display: grid;
-    grid-template-columns: 1.3fr 1.7fr;
-    grid-template-rows: 1fr;
-    border-bottom: 4px solid #687070 ;
-    padding-bottom: 3dvh;
-}
 
 .webserverIMG{
     grid-column-start: 1;
@@ -256,17 +258,13 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.IMGserver {
-    height: 98%;
-    width: 98%;
-    border-radius: 20px;
-}
-
 /* --- Bilan de compétence --- */
 #bilan_competence {
     background-color: #5b5d66c7;
     height: calc(100dvh - 9dvh);
     grid-template-rows:repeat(3,1fr);
+    min-height:calc(100dvh - 9dvh);
+    height: auto;
 }
 
 .Bilan {
@@ -287,7 +285,7 @@ nav ul li a:hover {
 }
 
 .card {
-    padding: 10px;
+    padding: 5dvh;
     margin :2%;
 }
 .myBtn {
@@ -304,21 +302,21 @@ nav ul li a:hover {
 
 .appercu {
     font-weight: 700;
-}
-  
-.viewmore {
-    margin-top: 3dvh;
-    overflow: hidden;
-    transition: max-height 1s;
-    max-height: 200px;
-    text-align: justify;
     font-size: 20px;
 }
   
-.viewmore.collapse {
-    max-height: 30px;
-}
 
+.viewmore {
+    margin-top: 3dvh;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    max-height: 20dvh; /* Hauteur initiale lorsque replié */
+    text-align: justify;
+    font-size: 2dvh;
+}
+.viewmore.collapse {
+    max-height: 0; /* Utiliser 0 pour replier complètement */
+}
 
 /* --- contact --- */
 
@@ -371,9 +369,7 @@ nav ul li a:hover {
 
 .copy-button img {
     display: flex;
-    
-    width: 24px;
-    height: 24px;
+    width: 3dvh;
 }
 
 .copy-button:hover img {
@@ -382,3 +378,4 @@ nav ul li a:hover {
 #photo {
     border: none;
 }
+
