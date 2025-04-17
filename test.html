@@ -1,49 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copier l'email avec SVG</title>
-    <style>
-        .copy-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-        }
-
-        .copy-button svg {
-            width: 24px;
-            height: 24px;
-            fill: currentColor;
-        }
-
-        .copy-button:hover svg {
-            fill: blue;
-        }
-    </style>
+    <title>Menu burger seulement en HTML et CSS</title>
+    <link href="test.css" rel="stylesheet">
 </head>
 <body>
-    <p>
-        Mon email : <span id="email">exemple@example.com</span>
-        <button class="copy-button" onclick="copierEmail()" aria-label="Copier l'email">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                
-            </svg>
-        </button>
-    </p>
-
-    <script>
-        function copierEmail() {
-            var email = document.getElementById('email').innerText;
-            var textarea = document.createElement('textarea');
-            textarea.value = email;
-            document.body.appendChild(textarea);
-            textarea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textarea);
-            alert('Email copié : ' + email);
-        }
-    </script>
+    <nav>
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+        <div class="main_pages">
+            <a href="#">Accueil</a>
+            <a href="#">Actualité</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav> 
 </body>
 </html>
