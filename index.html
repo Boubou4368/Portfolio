@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="'fr">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - Evan Atherly</title>
-        <link href="style/nomalize.css">
         <link id="theme-link" href="style/style.css" rel="stylesheet">
-        <link rel="icon" type="image/vnd.icon" href="images/iconblanche.png">
+        <link rel="icon" type="image/png" href="images/iconblanche.png">
     </head>
 <body>
     <div class="fixed-background"></div>
     <div class ="logo">
-        <a href="index.html">
-            <img src="images/iconblanche.png" alt="Logo boubou">
+        <a href="index.html#welcome">
+            <img src="images/iconblanche.png" alt="Logo boubou"/>
         </a>
     </div>
     <header>
         <nav>
-            <label for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-            <ul>
+            <button class="dropbtn">☰</button>
+            <ul class="dropdown-content">
                 <li><a href="#welcome"> Accueil</a></li>
                 <li><a href="#project"> Projets</a></li>
                 <li><a href="#bilan_competence"> bilan de compétences</a></li>
                 <li><a href="#contact"> Contact</a></li>
             </ul>
         </nav>
+        <script src="js/menu.js"></script>
     </header>
-    <section class ="§" id = "welcome">
+    <section class ="paraph" id = "welcome">
         <div class = "shape" id ="shapeG">
             <div class = "Gras" id ="Bonjour">Bonjour</div>
             <div id = "intro-text"> Je suis <u>Evan Atherly</u></div>
@@ -36,13 +35,13 @@
             <div class = "Gras" id = "Presentation"> Présentation</div>
         </div>    
         <div class = "shape" id ="shapeDTexte">
-            <div class="intro-text">Bienvenue sur mon portfolio,<br>
+            <div id="Bienvenue">Bienvenue sur mon portfolio,<br>
                 étudiant en Bachelor universitaire de Technologie en informatique
                 et voici les projets que j'ai pu réaliser ainsi que quelques informations sur moi.</div>
         </div>
     </section>
 
-    <section class ="§ horizontal" id ="project">
+    <section class ="paraph horizontal" id ="project">
         <div class = "horizontal-section">
             <div class="idcard shape horizontal-section">
                 <div class="projectTXT">
@@ -53,7 +52,7 @@
                     leur but étant bien évidemment de nous attraper.</p>
                     <a class ="lien" href="https://github.com/Boubou4368/Projet-Maze-Bank-#"><i>Lien vers le github du projet</i></a>
                 </div>
-                <img id="imgMB"src="images/Maze-bank.png"></img>
+                <img id="imgMB"src="images/Maze-bank.png"/>
             </div>
             <div class="idcard shape horizontal-section">
                 <div class="projectTXT">
@@ -67,19 +66,19 @@
                     </p>
                     <a class ="lien" href="https://github.com/Boubou4368/Portfolio"><i>Lien vers le github du projet</i></a>
                 </div>
-                <img id="imgMB"src="images/server.svg"></img>
+                <img id="imgMB"src="images/server.svg"/>
             </div>
             <div id="MazeB" class="idcard shape horizontal-section">
                 <div class="projectTXT">
                     <p>Projet en  Java  à suivre ....</p>
                 </div>
-                <img id="imgMB"src="images/java.svg"></img>
+                <img id="imgMB"src="images/java.svg"/>
             </div>
         </div>
 
     </section>
 
-    <section class ="§" id = "bilan_competence">
+    <section class ="paraph" id = "bilan_competence">
         <div class = "Gras Bilan"><u>Bilan de compétences</u></div>
         <section class = "case" id="first">
             <div class="card" data-nr="1">
@@ -115,14 +114,14 @@
         </section>
     </section>
 
-    <section id ="contact" class="§">
-        <embed class ="cv" src="document/Cv .pdf" frameborder="0"></embed>
+    <section id ="contact" class="paraph">
+        <iframe class ="cv" src="document/CurriculumVitae.pdf" frameborder="0"></iframe>
         <section class ="shape" id="coordonnées">
             <div class ="case" data-br ="1"><p><i>atherlyevan@gmail.com</i></p><button class="copy-button" onclick="copier(1)" aria-label="Copier l'email">
-                <img src="images/copy-icon.svg" alt="copier"></img></button><script src = "js/copier.js"></script>
+                <img src="images/copy-icon.svg" alt="copier"></button><script src = "js/copier.js"></script>
             </div>
             <div class ="case" data-br="2"><p><i>0615775018</i></p><button class="copy-button" onclick="copier(2)" aria-label="Copier l'email">
-                <img src="images/copy-icon.svg" alt="copier"></img></button><script src = "js/copier.js"></script></div>
+                <img src="images/copy-icon.svg" alt="copier"></button><script src = "js/copier.js"></script></div>
             <section class ="case" id ="photo"><p></p></section>
         </section>
     </section>
