@@ -472,7 +472,8 @@ nav ul li a:hover {
     .idcard{
         width: 45dvh;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
     }
     .text {
         font-size: 2.2vh;
