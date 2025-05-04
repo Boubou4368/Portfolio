@@ -392,6 +392,17 @@ nav ul li a:hover {
     border: none;
 }
 
+footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8dvh;
+}
+footer p{
+    color: aliceblue;
+}
+
 @media (max-width: 875px) {
     nav {
         display: flex;
