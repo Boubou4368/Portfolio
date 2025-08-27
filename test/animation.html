@@ -3,12 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation d'arrivée par le bas</title>
-    <link rel="stylesheet" href="style/test.css">
+    <title>Effet Sticky Simple</title>
+    <link id="theme-link" href="style/sticky.css" rel="stylesheet"> 
 </head>
 <body>
-    <div class="element">Élément 1</div>
-    <div class="element">Élément 2</div>
-    <div class="element">Élément 3</div>
+    
+    <!-- Section 1: Image à gauche, texte à droite -->
+    <div class="sticky-section section-1">
+        <div class="sticky-image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Montagne">
+        </div>
+        <div class="scrolling-text">
+            <div class="text-block">
+                <h2>Premier bloc</h2>
+                <p>L'image de montagne reste fixe à gauche pendant que vous scrollez ce texte. C'est le principe du sticky positioning.</p>
+            </div>
+            <div class="text-block">
+                <h2>Deuxième bloc</h2>
+                <p>Continuez à scroller. L'image de montagne est toujours là, collée à sa position. Elle ne bougera que quand cette section sera terminée.</p>
+            </div>
+            <div class="text-block">
+                <h2>Troisième bloc</h2>
+                <p>Dernier bloc de cette section. Une fois que vous aurez scrollé plus bas, l'image disparaîtra et la section suivante commencera.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Image à droite, texte à gauche (inversé) -->
+    <div class="sticky-section section-2 reverse">
+        <div class="sticky-image">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Forêt">
+        </div>
+        <div class="scrolling-text">
+            <div class="text-block">
+                <h2>Quatrième bloc</h2>
+                <p>Maintenant l'image de forêt est à droite et reste collée pendant que ce texte défile à gauche. C'est l'effet inversé.</p>
+            </div>
+            <div class="text-block">
+                <h2>Cinquième bloc</h2>
+                <p>L'image de forêt reste visible pendant que vous lisez ce contenu. Elle ne disparaîtra qu'à la fin de cette section.</p>
+            </div>
+            <div class="text-block">
+                <h2>Sixième bloc</h2>
+                <p>Fin de la section inversée. Scrollez encore pour voir la troisième section avec l'image revenue à gauche.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Image à gauche, texte à droite -->
+    <div class="sticky-section section-3">
+        <div class="sticky-image">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lac">
+        </div>
+        <div class="scrolling-text">
+            <div class="text-block">
+                <h2>Septième bloc</h2>
+                <p>L'image du lac est maintenant collée à gauche. Le principe de l'alternance : gauche → droite → gauche.</p>
+            </div>
+            <div class="text-block">
+                <h2>Huitième bloc</h2>
+                <p>L'effet sticky maintient l'image visible pendant tout le scroll de cette section. Simple mais efficace !</p>
+            </div>
+            <div class="text-block">
+                <h2>Dernier bloc</h2>
+                <p>Voilà comment fonctionne l'effet sticky avec alternance. L'image reste fixe jusqu'à la fin de sa section.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

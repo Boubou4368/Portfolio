@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Découvrez mon portfolio hébergé sur un serveur maison afin de mettre en vitrines mes projets">
+        <meta name="keywords" content="Portfolio, Développeur, étudiant, C++, JavaScript, Web, Evan ,Atherly">
+        <meta name="author" content="Atherly Evan">
+        <title>Portfolio - Evan Atherly</title>
+        <link id="theme-link" href="style/acceuil.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/iconblanche.png">
+    </head>
+<body>
+    <div class="fixed-background"></div>
+        <div class ="logo">
+            <a href="index.html#welcome">
+                <img src="images/iconblanche.png" alt="Logo boubou"/>
+            </a>
+        </div>
+        <header><h2>Portfolio</h2></header>
+        <section class ="paraph">
+            <div class ="shape" id ="shapeG">
+                <div class = "Gras" id ="Bonjour">Bonjour</div>
+            <div id = "intro-text"> Je suis <u>Evan Atherly</u></div>
+            </div>
+            <div class ="shape" id ="shapeDTitre">
+                <div class = "Gras" id = "Presentation"> Présentation</div>
+            </div>
+            <div class ="shape" id ="shapeDTexte">
+                <div id="Bienvenue">Bienvenue sur mon portfolio,<br>
+                Vous trouverez ici toutes les informations me concernant 
+                </div>
+            </div>
+            <div id="arrow">
+                <a href ="accueil.html#volet" style="color:inherit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                    <path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z" fill="currentColor"/>
+                </svg>
+                </a>
+            </div>
+        </section>
+
+        <section id = "volet">
+            <div class = "volt shape" id ="Formation" onclick="window.location.href='formation.html'" style="cursor: pointer;">
+                <h3> Formation</h3>
+                <div class = "content" >
+                    <div class ="preview" id = "iut">
+                        <h4><u>IUT Aix en Pce</u></h4>
+                        <ul>
+                            <li>Formation professionnelle</li>
+                            <li>intégration dans le systeme universitaire public</li>
+                            <li>Cours théoriques et pratiques</li>
+                        </ul>
+                    </div>
+                    <div class ="preview" id = "but">
+                        <h4><u>BUT - informatique</h4></u>
+                        <ul>
+                            <li>Pluralité de langages</li>
+                            <li>Enseignements généraux primaires </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class = "more"><a href="formation.html" style="color:black ;text-decoration: none;">Plus d'informations →</a></p>
+            </div>
+            <div class = "volt shape" id = "Realisation">
+                <h3 style="color:aliceblue"> Réalisations </h3>
+                <div class = "content" >
+                    <div class ="preview" id = "scolaire">
+                        <h4><u>Projets scolaires</u></h4>
+                        <div style="text-align: center; padding:3%"> Dans le cadre de mes études plusieurs projets nous ont été demandé.
+                            Des jeux, des algorithmes et des mises en place matériels.
+                        </div>
+                    </div>
+                    <div class ="preview" id = "perso">
+                        <h4><u>Projets personnels</h4></u>
+                        <div style="text-align: center; padding:3%">Durant cette premiere année, 
+                            j'ai aussi eu l'envi de pratiquer un peu plus ce qu'on a ou aller voir en cours. 
+                            C'est pourquoi j'ai réaliser durant mon temps libre des projets plus personnels  
+                        </div>
+                    </div>
+                </div>
+                <p class = "more" style="color:aliceblue">Plus d'informations →</p>
+            </div>
+
+            <div class = "volt shape" id="professionnel" onclick="window.location.href='Experience.html'">
+                <h3> Experiences et Compétences</h3>
+                <div class = "content" >
+                    <div class ="preview" id ="Experiences">
+                        <h4><u>Experiences :</u></h4>
+                        <ul>
+                            <li>Opérateur salle blanche STMicroelectronics</li>
+                            <li>Restauration
+                                <br> - Traiteur sur des yacths durant le Grand Prix de Monaco
+                            </li>
+                            <li> Animateur dans un centre aéré</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "preview" id ="Competences">
+                        <h4><u>Compétences :</u></h4>
+                        <ul>
+                            <li>Technique :
+                                <ul style = "padding-left: 20%;">
+                                    <li> Python</li>
+                                    <li> C++</li>
+                                    <li> Java</li>
+                                    <li> SQL</li>
+                                </ul>
+                            </li>
+                            <li>Relationnelles :
+                                <ul style = "padding-left: 20%;">
+                                    <li> Organisation</li>
+                                    <li> Travail d'équipe</li>
+                                    <li> Prises d'initiative</li>
+                                    <li> Standard et éxigence</li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            <p class = "more">Plus d'informations →</p>
+            </div>
+
+            <div class = "volt shape" id ="profil">
+                <h3> Profil et contact </h3>
+                <div class = "content" >
+                    <div class ="preview" id = "info">
+                        <h4><u>Vous trouverez ici :</u></h4>
+                        <ul>
+                            <li>Mon CV</li>
+                            <li>Adresse Email et numéro de téléphone</li>
+                        </ul>
+                    </div>
+                    <div class ="preview" id = "feedback">
+                        <h4><u>Feedback et retour :</h4></u>
+                        <div> Si vous avez quelconque retours ou questions à propos de moi ou du portfolio
+                            n'hésitez pas à me contacter grâce au mail ce dessous
+                            <br><p style="font-weight: 600;">evanatherly@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <p class = "more">Plus d'informations →</p>
+            </div>
+
+        </section>
+    <footer>
+        <p>© 2025 Portfolio Evan Atherly. Tous droits réservés.</p>
+    </footer>
+</body>

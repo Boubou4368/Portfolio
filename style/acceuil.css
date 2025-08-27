@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.oxanium-custom {
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1400;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'Oxanium', sans-serif;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    min-height: 100%;
+}
+
+.fixed-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Recouvre toute la page */
+    background-image: url('../images/silicone.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -1; /* Derrière le contenu */
+}
+
+/* --- barre de navigation --- */
+header {
+    position: fixed;
+    z-index: 20;
+    background-color: #6871693d;
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    height: 9dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 1px 15px 5px rgb(49, 49, 49);
+}
+
+.logo img {
+    height: 6dvh;
+    margin-left: 1dvh;
+    margin-top: 1dvh;
+    border-radius: 2dvh;
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    left: 0;
+}
+
+.dropbtn {
+    display: none;
+}
+
+nav {
+    width: 70%;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    width: 70%;
+    justify-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2vh;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contenue {
+    display: grid;
+    min-height: 100vh;
+    overflow: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* --- Section 1 --- */
+.paraph {
+    display: grid;
+    margin-top: 9dvh;
+    height: calc(100dvh - 9dvh);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: relative; /* modifié */
+    width: 100%;
+    z-index: 1; /* passe devant l'image */
+}
+
+.shape {
+    background-color: #5b5d66c7;
+    backdrop-filter: blur(10px);
+    padding: 1%;
+    border-radius: 20px;
+    margin: 1%;
+    width: 100%;
+    box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.Gras {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.4vh;
+}
+
+/* --- coté gauche --- */
+#shapeG {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    margin-left: 0%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#Bonjour {
+    justify-self: end;
+}
+
+#intro-text {
+    margin-top: 1dvh;
+    line-height: 1.5;
+    text-align: right;
+    justify-self: end;
+    font-size: 2.8vh;
+}
+
+#Bienvenue {
+    font-size: 2.8vh;
+}
+
+/* --- coté droit --- */
+#shapeDTitre {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    align-self: flex-end;
+    height: 20%;
+    width: 20%;
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideIn 1s forwards;
+}
+
+#shapeDTexte {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    height: 50%;
+    width: 70%;
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideIn 1s forwards;
+}
+
+#Presentation {
+    align-self: center;
+}
+
+#arrow {
+    position:absolute;
+    padding: 5dvh;
+    align-self: flex-end;
+    justify-self:center;
+}
+
+#arrow svg:hover{
+    background-color: #000000;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+
+#arrow svg:hover path {
+    fill: #f0f8ffc7; /* Couleur de l'icône au survol */
+    transition: all 0.7s ease;
+}
+
+#arrow svg{
+    background-color: #f0f8ffc7;
+    border-radius: 100%;
+    transition: all 0.7s ease;
+}
+/* --- volets --- */
+#volet {
+    margin-top: 9dvh;
+    height: calc(100dvh - 9dvh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1; /* passe devant l'image */
+}
+
+.volt {
+    height: 60dvh;
+    width: 35dvh;
+    transition: all 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding : 3dvh;
+}
+.volt::after{
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 248, 255, 0.308); 
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    transition: all 0.7s ease;
+}
+.volt:hover {
+    transform: scale(1.2, 1.1);
+    transition: all 0.7s ease;
+    box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.8);
+}
+
+.volt:hover::after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 248, 255, 0.103); 
+    backdrop-filter: blur(1px);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    z-index: 2;
+    grid-row-start: 1;
+    justify-content: center ;
+}
+
+.content{
+    z-index:2;
+    display: grid;
+    grid-template-rows: 2;
+    height: 100%;
+    width: 100%;
+    padding-top : 2dvh;    
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2dvh;
+    font-weight: 2000;
+    transition: all 0.7s ease;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px ;
+}
+
+.more {
+    z-index:2;
+    align-self: flex-end;
+    justify-self:flex-end;
+    position : absolute;
+    margin-top : 150%;
+}
+.more:hover{
+    text-decoration: underline;
+}
+
+#Formation {
+    background-image: url('../images/formation.webp');
+    background-size: cover;
+}
+
+#iut {
+    align-self: center;
+    grid-row-start: 1;
+}
+.volt:hover #iut {
+    background-color: #f0f8ffc7; 
+}
+
+#but {
+    grid-row-start: 2 ;
+}
+.volt:hover #but {
+    background-color: #f0f8ffc7; 
+}
+
+
+#Realisation{
+    background-image: url('../images/fondRealisation.png');
+    background-size: cover;
+}
+
+#scolaire{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color:aliceblue
+}
+.volt:hover #scolaire {
+    background-color:#5b5d66c7; 
+}
+#perso {
+    grid-row-start: 2 ;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color:aliceblue
+}
+.volt:hover #perso {
+    background-color: #5b5d66c7; 
+}
+
+#professionnel{
+    background-image: url(../images/illustration_pro.png);
+    background-size: contain;
+    background-position: center;
+}
+
+#Experiences{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#Competences {
+    display: flex;
+    width: 100%;
+    margin-top: 1.5%;
+}
+
+.volt:hover #Experiences{
+    background-color: #f0f8ffc7;
+}
+
+.volt:hover #Competences{
+    background-color: #f0f8ffc7;
+    margin-top:1.5%;
+}
+
+#profil{
+    align-self: center;
+    background-image: url('../images/Cv\ .png');
+    background-size: cover;
+    background-position: center;
+}
+
+.volt#profil:hover::after{
+    backdrop-filter:blur(3px);
+    background-color: rgba(240, 248, 255, 0.103); 
+}
+
+#info{
+    display: flex;
+    align-items : flex-end;
+}
+
+.volt:hover #info{
+    background-color: #5b5d66c7;
+}
+
+.volt:hover #feedback{
+    background-color: #5b5d66c7;
+}
+
+#info ul{
+    direction: rtl; 
+    text-align: right;
+}
+#feedback{
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+}
+/* -- footer -- */
+footer{
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8dvh;
+}
+footer p{
+    color: rgb(240, 248, 255);
+}
