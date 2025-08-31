@@ -109,7 +109,6 @@ header h2{
 .sticky-image img {
     width: 100%;
     margin-top: 10%;
-
 }
 .shape p {
     text-indent: 65px;
@@ -124,30 +123,42 @@ header h2{
     margin : 2dvh;
 }
 
-.shape img {
+#Monaco {
+    display: flex;
+    flex-direction: column;
+}
+
+.Experiences .bulles .shape img {
     border: #16163f;
     border-style: solid; 
     border-radius: 10px;
     aspect-ratio: 16 / 9;
 }
 
-#Monaco {
-    display: flex;
-    flex-direction: column;
-}
 
 
 .competences {
-    height: 100dvh;
-    width: 100dvh;
     background-color: #16163f;
+    height: auto;
+    width: 100%;
+    margin-top: 10dvh;
+    padding : 3dvh;
+    display: flex;
+
 }
 
+.competences .shape {
+    display: flex;
+    align-items: center;
+}
 
-
-
+.competences .shape img {
+    margin: 1%;
+}
 
 #retour {
+    background-color : #343534c7;
+    color : rgb(240, 248, 255);
     position:fixed;
     bottom: 20px;
     right: 20px;

@@ -363,7 +363,9 @@ h3 {
 #professionnel{
     background-image: url(../images/illustration_pro.png);
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+    background-color:#16163f;
 }
 
 #Experiences{
