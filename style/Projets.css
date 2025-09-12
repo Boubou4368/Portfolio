@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.oxanium-custom {
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1400;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'Oxanium', sans-serif;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.shape {
+    /*background-color: #5b5d66c7;*/
+    background-color: #f0f8ffc7;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    margin : 1%;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 30dvh;
+    border-bottom: rgb(39, 39, 39) solid;
+    display: flex;
+    transition: all 0.7s ease;
+}
+
+.section img{
+    border-radius: 10px;
+    width: 27dvh;
+}
+
+.section .shape{
+    width: fit-content;
+}
+
+.illu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5vh;
+}
+a{
+    color : black;
+    transition: all 0.7s ease;
+}
+a:hover{
+    font-weight: 600;
+    transition: all 0.7s ease;
+}
+.section::before{
+    content: "";
+    position: absolute;
+    top : 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f8ff49;
+    z-index: 0;
+    backdrop-filter: blur(10px);
+    transition: all 0.7s ease;
+}
+
+.section:hover{
+    transition: all 0.7s ease;
+}
+.section:hover::before{
+    content: "";
+    position: absolute;
+    top : 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f8ff1a;
+    z-index: 0;
+    transition: all 0.7s ease;
+}
+
+.section > * {
+  position: relative;
+  z-index: 1; /* pour que ton texte/contenu passe au-dessus du voile */
+}
+
+.section p{
+    align-self:center;
+    margin: 3vh;
+}
+
+#bomberman {
+    background-image: url("../images/macro1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#Python{
+    background-image: url("../images/Rubrane.png");
+    background-size: cover;
+    background-position: center;
+}
+#serveur{
+    background-image: url(../images/Azunim.png);
+    background-position: center;
+}
+#portfolio{
+    background-image: url(../images/Virmar.png);
+    background-size: cover;
+    background-position: center -150px;
+}
