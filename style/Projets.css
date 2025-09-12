@@ -99,18 +99,23 @@ a:hover{
     margin: 3vh;
 }
 
+.section img {
+    object-fit: cover;
+    height: 110%;
+    border-radius: 10px;
+}
 #bomberman {
     background-image: url("../images/macro1.jpg");
     background-size: cover;
     background-position: center;
 }
 #Python{
-    background-image: url("../images/Rubrane.png");
+    background-image: url("../images/Azunim.png");
     background-size: cover;
     background-position: center;
 }
 #serveur{
-    background-image: url(../images/Azunim.png);
+    background-image: url(../images/Rubrane.png);
     background-position: center;
 }
 #portfolio{
