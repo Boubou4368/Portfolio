@@ -38,19 +38,18 @@ html, body {
     transition: all 0.7s ease;
 }
 
-.section img{
-    border-radius: 10px;
-    width: 27dvh;
-}
-
 .section .shape{
     width: fit-content;
+    transform: translateX(100px);
+    animation: slideIn 1s forwards;
+    opacity: 0;
 }
 
 .illu{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 1.5vh;
 }
 a{
@@ -97,13 +96,25 @@ a:hover{
 .section p{
     align-self:center;
     margin: 3vh;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    opacity: 0;
 }
 
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .section img {
     object-fit: cover;
-    height: 110%;
+    height: 20dvh;
+    width: 27dvh;
     border-radius: 10px;
 }
+
 #bomberman {
     background-image: url("../images/macro1.jpg");
     background-size: cover;
@@ -118,8 +129,31 @@ a:hover{
     background-image: url(../images/Rubrane.png);
     background-position: center;
 }
-#portfolio{
+#MazeBank{
     background-image: url(../images/Virmar.png);
     background-size: cover;
     background-position: center -150px;
+}
+
+
+#retour {
+    background-color : #343534c7;
+    color : rgb(240, 248, 255);
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30%;
+    transition: all 0.7s ease;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 5%;
+    z-index: 100;
+}
+
+#retour:hover {
+    transform: scale(1.1, 1);
+    transition: all 0.7s ease;
+    box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.8);
 }
