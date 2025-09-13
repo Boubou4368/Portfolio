@@ -122,3 +122,32 @@ nav ul li a:hover {
         p {
             text-align: center;
         }
+
+
+.shaperetour {
+    background-color: #5b5d66c7;
+    padding : 1%;
+    border-radius: 20px;
+    width: 80%;
+    margin: 1%;
+    box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.3);
+}
+#retour {
+    background-color : #20202181;
+    color : rgb(240, 248, 255);
+    position:fixed;
+    top: 90px;
+    left: 20px;
+    width: fit-content;
+    padding : 1%;
+    transition: all 0.7s ease;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#retour:hover {
+    transform: scale(1.1, 1);
+    transition: all 0.7s ease;
+    box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.8);
+}

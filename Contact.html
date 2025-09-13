@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="author" content="Atherly Evan">
+        <title>Portfolio - Evan Atherly</title>
+        <link id="theme-link" href="style/Contact.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/iconblanche.png">
+    </head>
+<body>
+    <header>
+        <a href="index.html#welcome" >
+            <img src="images/iconblanche.png" id="logo"alt="Logo boubou"/>
+        </a>
+        <h2>Profile et contact</h2>
+    </header>
+    <section id ="contact" class="paraph">
+        <iframe class ="cv" src="document/Cv.pdf" frameborder="0"></iframe>
+        <section class ="shape" id="coordonnées">
+            <div class ="case" data-br ="1"><p><i>atherlyevan@gmail.com</i></p><button class="copy-button" onclick="copier(1)" aria-label="Copier l'email">
+                <img src="images/copy-icon.svg" alt="copier"></button><script src = "js/copier.js"></script>
+            </div>
+            <div class ="case" data-br="2"><p><i>06.15.77.50.18</i></p><button class="copy-button" onclick="copier(2)" aria-label="Copier l'email">
+                <img src="images/copy-icon.svg" alt="copier"></button><script src = "js/copier.js"></script></div>
+            <div class="case" style="border-bottom: none;">
+                <p> Un serveur php est en cours de préparation pour permettre l'envoi de mail à mon adresse mail directement depuis le site web.
+                    cette page est donc amené a évoluer.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <div class="shape" id="retour" onclick="window.location.href='accueil.html#volet'" style="cursor: pointer;">
+            <span>← </span>
+    </div>
+    
+    <footer>
+        <p>© 2025 Portfolio Evan Atherly. Tous droits réservés.</p>
+    </footer>
+</body>
